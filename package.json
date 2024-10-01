@@ -4,8 +4,8 @@
   "description": "Node",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "tsc && node dist/app.js",
+    "test": "jest",
+    "start": "tsc",
     "lint": "eslint . --ext .ts"
   },
   "repository": {
