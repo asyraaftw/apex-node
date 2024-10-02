@@ -5,6 +5,6 @@
 node_modules
 
 # Jest
-jest.config.ts
-jest.*.*
-jest.*
+# jest.config.ts
+# jest.*.*
+# jest.*
