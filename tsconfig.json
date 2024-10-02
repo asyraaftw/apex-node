@@ -1,12 +1,27 @@
 {
   "compilerOptions": {
-    "types": ["jest"],
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    "target": "ES2020",
-    "module": "CommonJS",
     "strict": true,
-    "esModuleInterop": true,
-    "skipLibCheck": true
-  }
+    "strictBindCallApply": true,
+    "strictFunctionTypes": true,
+    "strictNullChecks": true,
+    "skipLibCheck": true,
+    "allowJs": true,
+    "rootDir": "src",
+    "target": "es2022", // or higher, like es2020, es2022
+    "module": "es2022", // or "es2022", "node16", or similar
+    "lib": ["esnext"],
+    "moduleResolution": "node",
+    "types": ["jest"]
+  },
+  "include": [
+    "./src/modules/**/*.ts",
+    "./src/modules/**/**/*.ts",
+    "./src/*.ts"
+  ],
+  "exclude": ["node_modules", "dist"]
 }
+// https://www.typescriptlang.org/tsconfig/#allowSyntheticDefaultImports
