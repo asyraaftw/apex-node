@@ -3,6 +3,7 @@
 
 # node_mods
 node_modules
+dist
 
 # Jest
 # jest.config.ts
